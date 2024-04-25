@@ -1,0 +1,55 @@
+@import "../../styles/constants";
+
+.carCatalogueTable {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+
+    thead, tbody {
+        th, td {
+            font-size: 14px;
+            border: 1px solid $color-dark-gray;
+            padding: 5px;
+        }
+    }
+
+    thead {
+        th {
+            background-color: $color-light-gray;
+        }
+    }
+
+    tbody {
+        tr {
+            cursor: pointer;
+            transition: 0.3s background-color;
+
+            &.active, &:hover {
+                background-color: $color-gray;
+            }
+        }
+
+        td {
+
+        }
+    }
+}
+
+.checkbox {
+    position: relative;
+    display: block;
+    text-align: center;
+
+    &:after {
+        content: "\2610";
+        display: block;
+        font-size: 30px;
+        line-height: 0;
+    }
+
+    &.checked {
+        &:after {
+            content: "\2611";
+        }
+    }
+}

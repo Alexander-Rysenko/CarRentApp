@@ -1,0 +1,22 @@
+@import "../../styles/constants";
+
+.controlPanelWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    background-color: $color-light-gray;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.controlPanelButtons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.controlPanelText {
+    font-size: 16px;
+    text-align: center;
+}

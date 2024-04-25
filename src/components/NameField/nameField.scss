@@ -1,0 +1,11 @@
+@import "../../styles/constants";
+
+.nameFieldWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nameFieldLabel {
+    font-size: 15px;
+}

@@ -1,0 +1,28 @@
+@import "../../styles/constants";
+
+.button {
+    font-size: 15px;
+    color: $color-text-gray;
+    border: 1px solid $color-dark-gray;
+    border-radius: 6px;
+    padding: 10px 20px;
+    max-width: fit-content;
+    align-self: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.3s background-color;
+
+    &:hover:not(.disabled) {
+        background-color: $color-dark-gray;
+    }
+
+    &.disabled {
+        cursor: not-allowed;
+    }
+}
+
+.buttonContent {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+}
