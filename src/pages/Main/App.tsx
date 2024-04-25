@@ -5,10 +5,10 @@ import { iActiveCarTypes, iCarCatalogue, iMapPositionTypes, iNearestRoadsTypes }
 import { controlButtons } from "../../constants/constants.ts";
 import { addCarPosition } from "../../utils/utils.ts";
 import { defaultActiveCar } from "../../mockData.ts";
-
-import "../../styles/app.scss";
 import Modal from "../../components/Modal";
 import Button from "../../components/Button";
+
+import "../../styles/app.scss";
 
 
 const App = (): ReactElement => {
@@ -18,8 +18,7 @@ const App = (): ReactElement => {
   const [isSelectionMapPosition, setIsSelectionMapPosition] = useState<boolean>(false);
   const [isModalAppear, setIsModalAppear] = useState<boolean>(false);
 
-
-  useEffect(() => {
+  useEffect((): void => {
     const formattedCarCatalogue: iCarCatalogue[] = addCarPosition();
 
     setCarCatalogueData(formattedCarCatalogue);
